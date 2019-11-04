@@ -1,0 +1,36 @@
+﻿@model X.PagedList.IPagedList<LojaVirtual.Models.Produto>
+@{
+    ViewData["Title"] = "Loja Virtual";    
+    var pesquisa = Context.Request.Query["pesquisa"];
+}
+
+    <div class="container">
+        <main role="main">
+
+            <div class="container" id="code_prod_complex">
+                <div class="row">
+
+                    @foreach (var produto in Model)
+                    {
+                        <div class="col-md-3">
+                            <figure class="card card-product">
+                                <div class="img-wrap"><img src="@produto.CaminhoImagem" height="100" width="100"></div>
+                                <figcaption class="info-wrap">
+                                    <h4 class="title">@produto.Nome.Trim()</h4>
+                                    <p class="desc">@produto.Descricao.Trim()</p>
+                                </figcaption>
+                                <div class="bottom-wrap">
+                                    <a asp-controller="CarrinhoCompra" asp-action="AdicionarItem" asp-route-id="@produto.Id" class="btn btn-sm btn-primary float-right">Adicionar</a>
+                                    <div class="price-wrap h5">
+                                        <span class="price-new">@produto.PrecoVenda.ToString("C")</span>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            @Html.PagedListPager((IPagedList)Model, pagina => Url.Action("Index", new { pagina = pagina, pesquisa = pesquisa }))
+        </main>
+    </div>
