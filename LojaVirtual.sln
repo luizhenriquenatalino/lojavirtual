@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaVirtual", "LojaVirtual\LojaVirtual.csproj", "{23EA6187-98D9-4D0A-B7D7-EE95B6934C91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LojaVirtual", "LojaVirtual\LojaVirtual.csproj", "{23EA6187-98D9-4D0A-B7D7-EE95B6934C91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F4566AAB-97C6-4FCB-9AD4-64553A1DF11B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{23EA6187-98D9-4D0A-B7D7-EE95B6934C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23EA6187-98D9-4D0A-B7D7-EE95B6934C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23EA6187-98D9-4D0A-B7D7-EE95B6934C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4566AAB-97C6-4FCB-9AD4-64553A1DF11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4566AAB-97C6-4FCB-9AD4-64553A1DF11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4566AAB-97C6-4FCB-9AD4-64553A1DF11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4566AAB-97C6-4FCB-9AD4-64553A1DF11B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
