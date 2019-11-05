@@ -14,8 +14,8 @@ namespace ConsoleApp
                 double[] valoresCalculados = ObterValoresCriado(valorDigitado);
                 Imprimir(valoresCalculados);
                 double[] valoresParOrImpar = ObterValorPorPosicaoParOrImpar(valoresCalculados, IsPar(opcaoSelecionada));
-                Console.WriteLine("Resultado:");
                 Imprimir(valoresParOrImpar);
+                Console.WriteLine("Resultado: {0}", valoresParOrImpar.Sum());                
             }
             catch(Exception ex)
             {
