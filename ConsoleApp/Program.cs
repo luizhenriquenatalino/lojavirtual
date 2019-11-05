@@ -27,6 +27,7 @@ namespace ConsoleApp
         {
             return opcaoSelecionada == 1;
         }
+
         private static double[] ObterValorPorPosicaoParOrImpar(double[] valoresCalculados, bool isPar)
         {                        
             if (isPar)
